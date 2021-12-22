@@ -1,0 +1,25 @@
+<div class="text-center">
+  <div class="spinner-border" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+<table *ngIf="dataLoaded == true" class="table">
+  <thread>
+    <tr>
+      <th>Id</th>
+      <th>Araba Id</th>
+      <th>Müşteri Id</th>
+      <th>Kiralama Günü</th>
+      <th>Geri Dönüş Günü</th>
+      <th>Adı</th>
+
+    </tr>
+  </thread>
+  <tr *ngFor="let car of cars">
+    <td>{{color.colorId}}</td>
+    <td>{{color.carId}}</td>
+    <td>{{color.customerId}}</td>
+    <td>{{color.rentDate}}</td>
+    <td>{{color.returnDate}}</td>
+  </tr>
+</table>
